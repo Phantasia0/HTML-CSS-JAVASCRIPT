@@ -7,6 +7,21 @@
 </head>
 <body>
   <h1>자리 배치도</h1>
+  <script>
+    var memNum = parseInt(prompt("입장객 수?"));
+    var colNum = parseInt(prompt("한 줄에 몇명씩?"));
+
+    if(memNum % colNum ===0)
+    {
+      rowNum = parseInt(memNum/colNum);
+    }
+    else
+    {
+      rowNum = parseInt(memNum/colNum) + 1;
+    }
+
+    document.write(rowNum + "개의 줄이 필요");
+  </script>
     
 </body>
 </html>
